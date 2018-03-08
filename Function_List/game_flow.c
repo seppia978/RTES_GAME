@@ -70,20 +70,23 @@ void play_the_game(int timing){
 		textout_ex(screen, font, "YOU WIN :)", HOR_CENTER, 450, 15, 0);
 		snprintf(s, 255, "time gained: %d", time_gained);
 		textout_ex(screen, font, s, HOR_CENTER, 470, 15, 0);
-		textout_ex(screen, font, "Space to next level", HOR_CENTER, 490, 15, 0);
 		result = load_sample("File/winner.wav");
 	}
 	else{
 		textout_ex(screen, font, "YOU LOSE :(", HOR_CENTER, 450, 15, 0);
-		textout_ex(screen, font, "Enter to retry", HOR_CENTER, 490, 15, 0);
 		result = load_sample("File/loser.wav");
 	}
 	//textout_ex(screen, font, s, 450, 450, 15, 0);
-	play_sample(result, VOL_MAX, 128, 1000, 0);
-	textout_ex(screen, font, "Esc to exit", HOR_CENTER, 510, 15, 0);		
+	play_sample(result, VOL_MAX, 128, 1000, 0);		
 		
 	printScore();
 	sleep(2);
+	
+	if (score == N_BALLS - 1)
+		textout_ex(screen, font, "Space to next level", HOR_CENTER, 490, 15, 0);
+	else
+		textout_ex(screen, font, "Enter to retry", HOR_CENTER, 490, 15, 0);
+	textout_ex(screen, font, "Esc to exit", HOR_CENTER, 510, 15, 0);
 	stop_sample(result);
 	adjust_sample(intro, VOL_MAX, 128, 1000, 1);
 }
