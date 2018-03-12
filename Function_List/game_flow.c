@@ -83,7 +83,7 @@ void play_the_game(int timing){
 	sleep(2);
 	
 	if (score == N_BALLS - 1)
-		textout_ex(screen, font, "Space to next level", HOR_CENTER, 490, 15, 0);
+		textout_ex(screen, font, "Enter to next level", HOR_CENTER, 490, 15, 0);
 	else
 		textout_ex(screen, font, "Enter to retry", HOR_CENTER, 490, 15, 0);
 	textout_ex(screen, font, "Esc to exit", HOR_CENTER, 510, 15, 0);
