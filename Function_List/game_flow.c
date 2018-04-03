@@ -63,9 +63,7 @@ void play_the_game(int timing){
 	remove_int(inc_Timet);
 	for (I = 0; I < N_BALLS; I++)
 		drawCircle(ball[I].pin.x, ball[I].pin.y, ball[I].R, BG_COLOR);
-	/*textout_ex(screen, font, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 512, 650, BG_COLOR, BG_COLOR);
-	
-	textout_ex(screen, font, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", 450, 450, BG_COLOR, BG_COLOR);*/
+
 	if (score == N_BALLS - 1){
 		textout_ex(screen, font, "YOU WIN :)", HOR_CENTER, 450, 15, 0);
 		snprintf(s, 255, "time gained: %d", time_gained);

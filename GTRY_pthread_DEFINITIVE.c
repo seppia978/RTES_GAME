@@ -24,7 +24,8 @@ int main(){
 		set_color_depth(8);
 		set_gfx_mode(GFX_AUTODETECT, WID, HEI, 0, 0);
 		init_game_params();
-		while(!key[KEY_ENTER]) ;
+		while(!key[KEY_ENTER]) 
+			usleep(10);
 		
 		play_the_game(timing);
 		
