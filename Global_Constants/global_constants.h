@@ -6,7 +6,8 @@
 #define PLAYER_COL 4
 #define VOL_MAX 255
 #define VOL_MIN 50
-#define HOR_CENTER 420
+#define HOR_CENTER 400
+#define VER_CENTER 300
 #define N_BALLS 15
 /***************************************/
 

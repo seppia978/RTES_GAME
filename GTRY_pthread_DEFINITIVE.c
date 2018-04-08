@@ -22,7 +22,7 @@ int main(){
 			
 		play_sample(intro, VOL_MAX, 128, 1000, 1);
 		set_color_depth(8);
-		set_gfx_mode(GFX_AUTODETECT, WID, HEI, 0, 0);
+		set_gfx_mode(GFX_AUTODETECT_WINDOWED, WID, HEI, 0, 0);
 		init_game_params();
 		while(!key[KEY_ENTER]) 
 			usleep(10);

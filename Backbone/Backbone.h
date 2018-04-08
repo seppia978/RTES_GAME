@@ -9,8 +9,8 @@
 #include <string.h>
 #include <time.h>
 
-#define WID 1024
-#define HEI 768
+#define WID 800
+#define HEI 600
 #define bool int
 
 int LEFT, RIGHT, FLOOR, TOP;
