@@ -37,6 +37,7 @@ int main(){
 				adjust_sample(intro, VOL_MIN, 128, 1000, 1);
 				play_the_game(timing);
 			}
+			usleep(10);
 		}
 		
 	allegro_exit();
